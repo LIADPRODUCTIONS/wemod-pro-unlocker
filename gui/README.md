@@ -27,9 +27,9 @@ Our GUI app is distributed as a Windows App Package (`.msix`). Because we're usi
 **What you'll need to download:**
 
 * `gui-x64.msix` (the app package)
-* `WeMod-Pro-Unlocker.cer` (our test certificate file)
+* `WeMod-Pro-Unlocker.cer` (our certificate file)
 
-**Step 1: Install Our Test Certificate**
+**Step 1: Install Our Certificate**
 
 You only need to do this step **once** per computer.
 
