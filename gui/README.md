@@ -1,15 +1,14 @@
 <div align="center">
-  <h1>WeMod Pro Unlocker - GUI</h1>
-  <h4>This program patches the WeMod app to think you're a pro subscriber.</h4>
-  <img src="https://img.shields.io/github/downloads/bennett-sh/wemod-pro-unlocker/total" alt="Downloads on GitHub">
-  <img src="https://img.shields.io/github/v/release/bennett-sh/wemod-pro-unlocker.svg" alt="Latest version">
-  <img src="https://img.shields.io/crates/l/wemod-pro-unlocker?color=green" alt="License">
+  <h1>WeMod Pro Unlocker - GUI</h1>
+  <h4>This program patches the WeMod app to think you're a pro subscriber.</h4>
+  <img src="https://img.shields.io/github/downloads/LIADPRODUCTIONS/wemod-pro-unlocker/total" alt="Downloads on GitHub">
+  <img src="https://img.shields.io/github/v/release/LIADPRODUCTIONS/wemod-pro-unlocker.svg" alt="Latest version">
+  <img src="https://img.shields.io/crates/l/wemod-pro-unlocker?color=green" alt="License">
 
-
-  <img src="https://img.shields.io/badge/.NET-512BD4?logo=dotnet" alt=".NET">
-  <img src="https://img.shields.io/badge/Windows-10+11-0078D4?logo=windows-11" alt="Windows 10 and 11">
-  <img src="https://img.shields.io/github/languages/code-size/bennett-sh/wemod-pro-unlocker?color=yellow" alt="Code Size"><br/><br/>
-  <img width="256" src="https://user-images.githubusercontent.com/110846042/204567385-4df3007c-7a63-40fd-9feb-f9f36aa43030.png" alt="WeMod Pro Unlocker Logo">
+  <img src="https://img.shields.io/badge/.NET-512BD4?logo=dotnet" alt=".NET">
+  <img src="https://img.shields.io/badge/Windows-10+11-0078D4?logo=windows-11" alt="Windows 10 and 11">
+  <img src="https://img.shields.io/github/languages/code-size/LIADPRODUCTIONS/wemod-pro-unlocker?color=yellow" alt="Code Size"><br/><br/>
+  <img width="256" src="https://user-images.githubusercontent.com/110846042/204567385-4df3007c-7a63-40fd-9feb-f9f36aa43030.png" alt="WeMod Pro Unlocker Logo">
 </div>
 
 #### [Back to the main page](../README.md)
@@ -19,26 +18,41 @@ This means that you won't need Node.JS or asar on your system.
 
 <br/>
 
-### ⚠️ HELP NEEDED: If you know how to properly sign an MSIX for free, please contact me
-
-<br/>
-
 ## ⬇️ Installation
-#### IMPORTANT: Do **NOT** delete or move the gui folder as it will require you to redo step 5 and everything after it
 
-1. Install Visual Studio 2022 with ".NET Desktop Developement" and "UWP Developement"
-2. Enable Windows Developer Mode
-3. Clone the repository & open the solution (.sln) located in /gui in VS
-4. Choose your CPU arch (e.g. x64) and "Release" in the toolbar located at the top
-5. Click on the second green arrow in the toolbar (it's only partially filled)
+You can download the `gui-x64.msix` and `WeMod-Pro-Unlocker.cer` files from our [releases page](https://github.com/LIADPRODUCTIONS/wemod-pro-unlocker/releases).
 
-**If this doesn't open the GUI, do the following:**
+Our GUI app is distributed as a Windows App Package (`.msix`). Because we're using a special test certificate for now, you'll need to do a quick setup step once to allow your computer to trust our app.
 
-5. Open Powershell and cd into the following directory: ```/gui/WMPU-GUI/bin```
-6. Go into the folder with your selected CPU arch (e.g. ```x64/```)
-7. Go into the ```Release``` folder and afterwards into the folder inside there (it should be named something like ```net6.0-windows10.0.19041.0```)
-8. Run ```Add-AppxPackage -Register .\AppxManifest.xml```
-9. WeMod will now appear in your start menu and programs list
+**What you'll need to download:**
 
+* `gui-x64.msix` (the app package)
+* `WeMod-Pro-Unlocker.cer` (our test certificate file)
+
+**Step 1: Install Our Test Certificate**
+
+You only need to do this step **once** per computer.
+
+1.  Download both `gui-x64.msix` and `WeMod-Pro-Unlocker.cer` to your computer.
+2.  Double-click on the `WeMod-Pro-Unlocker.cer` file.
+3.  Click on **"Install Certificate..."**.
+4.  In the Certificate Import Wizard:
+    * Select **"Local Machine"**.
+    * Click **"Next"**.
+    * Select **"Place all certificates in the following store"**.
+    * Click **"Browse..."**.
+    * Choose **"Trusted Root Certification Authorities"** from the list.
+    * Click **"OK"**.
+    * Click **"Next"**.
+    * Click **"Finish"**.
+5.  If prompted by a security warning, click **"Yes"**.
+6.  Click **"OK"** when the import is successful.
+
+**Step 2: Install the App**
+
+Now that your computer trusts our certificate, you can install the app.
+
+1.  Double-click on the `gui-x64.msix` file.
+2.  Click **"Install"**.
 
 <br/>
