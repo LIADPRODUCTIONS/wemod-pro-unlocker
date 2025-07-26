@@ -13,7 +13,7 @@
 
 <br/>
 
-**Forked from [bennett-sh/wemod-pro-unlocker](https://github.com/bennett-sh/wemod-pro-unlocker)**
+**This is a fixed fork from [bennett-sh/wemod-pro-unlocker](https://github.com/bennett-sh/wemod-pro-unlocker) that resolves the GUI installer issues by utilizing a new `.cer` file.**
 
 ## ⬇️ Installation
 There's two things you can install:
